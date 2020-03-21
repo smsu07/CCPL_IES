@@ -1,0 +1,88 @@
+// Set up session options
+SessionOptions sessionOptions = new SessionOptions
+{
+    Protocol = Protocol.Ftp,
+    HostName = "ftp.ccplftp.com",
+    UserName = "flora@ccplftp.com",
+    Password = "flora321!@#",
+};
+
+sessionOptions.AddRawSettings("FtpForcePasvIp2", "0");
+sessionOptions.AddRawSettings("FtpUseMlsd", "0");
+sessionOptions.AddRawSettings("FtpHost", "0");
+
+using (Session session = new Session())
+{
+    // Connect
+    session.Open(sessionOptions);
+
+    // Your code
+}
+
+
+// Set up session options
+SessionOptions sessionOptions = new SessionOptions
+{
+    Protocol = Protocol.Ftp,
+    HostName = "ftp.ccplftp.com",
+    UserName = "flora@ccplftp.com",
+    Password = "flora321!@#",
+    TimeoutInMilliseconds = 60000,
+};
+
+sessionOptions.AddRawSettings("FtpForcePasvIp2", "0");
+sessionOptions.AddRawSettings("FtpUseMlsd", "0");
+sessionOptions.AddRawSettings("FtpHost", "0");
+
+using (Session session = new Session())
+{
+    // Connect
+    session.Open(sessionOptions);
+
+    // Your code
+}
+
+
+
+// Set up session options
+SessionOptions sessionOptions = new SessionOptions
+{
+    Protocol = Protocol.Ftp,
+    HostName = "ftp.ccplftp.com",
+    UserName = "creative",
+    Password = "hjjGTT4#@!~(00-*&",
+    TimeoutInMilliseconds = 60000,
+};
+
+sessionOptions.AddRawSettings("FtpPingInterval", "60");
+
+using (Session session = new Session())
+{
+    // Connect
+    session.Open(sessionOptions);
+
+    // Your code
+}
+
+
+--------------------------------------------------------------------------------------FLOWER
+C:\Program Files (x86)\WinSCP\WinSCP.exe
+
+
+SELECT Cust_Code, Cust_ShortCode, InputFolder 
+FROM     IES_Customers
+WHERE Cust_Code ='C_00006'
+
+ftp.ccplftp.com
+flora@ccplftp.com
+flora321!@#
+/Input/
+
+
+
+User: creative 
+Pass: hjjGTT4#@!~(00-*&
+
+
+
+https://www.codeproject.com/Articles/4352/Demystifying-the-NET-Global-Assembly-Cache
