@@ -42,3 +42,11 @@ WHERE Cust_Code IN ('C_000063,'C_00006')
 SELECT Cust_Code, Cust_ShortCode, InputFolder ,FTPAddress,FTPLogin,FTPPassword 
 FROM  IES_Customers 
 WHERE Cust_Code IN ('C_00003','C_00006')
+
+Test
+
+
+
+
+
+test
